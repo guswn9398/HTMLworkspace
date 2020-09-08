@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+/*모든  div 의 너비,높이를 200으로 일괄처리
+   선택자에 쉼표를 사용하며,  and의 의미로 연결할 수 있다.
+*/
+#box1, #box2, #box3{
+	width:200px;
+	height:200px;
+	background:dodgerblue;
+	margin:50px;
+	color:#ffffff;
+	font-size:30px;
+	font-weight:bold;
+}
+
+
+#box1{
+	transform:translate(600px, 300px); /*x축 600, y축 300*/
+}
+
+#box2{
+	transform:rotate(40deg);
+}
+#box3{
+	transform:scale(0.5, 0.5); /*width 2배, height 2배*/
+}
+
+</style>
+</head>
+<body>
+<h2>
+<pre>
+	CSS3부터는 변형, 전이 에니메이션등을 지원하고, 특히 변형시에는 transform을 명시
+	해야 한다.
+
+	Transform의 종류 
+	1.translate : 이동
+	2.rotate : 회전 
+	3.scale : 크기(비율  ex) 2는 두배)
+</pre>
+</h2>
+
+	<div id="box1">이동</div>
+	<div id="box2">회전</div>
+	<div id="box3">크기</div>
+
+</body>
+</html>

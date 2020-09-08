@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <title>layout</title>
+ <style>
+	#wrapper{
+	width:500px;
+	height:500px;
+	background:yellow;
+	margin:auto;
+	}
+	/*어짜피 wrapper안에 가두어져 있기 때문에 픽셀이 아닌 퍼센트로 지정*/
+	#content1{
+		background-color:red;
+		height:400px;
+		width:50%;
+		float:left;
+	}	
+	#content2{
+		background-color:green;
+		width:50%;
+		height:400px;
+		float:left;/*float으로 생긴 빈틈으로 들어가지 않게 하는 속성*/
+	}	
+	#footer{
+		background:blue;
+		height:100px;
+		width:100%;
+		clear:left;
+	}
+</style>
+</head>
+
+<body>
+	<pre>
+		<h3>float과 clear에 대해 학습한다</h3>
+	</pre>
+
+	<div id="wrapper">
+		<div id="content1">좌측영역</div>
+		<div id="content2">우측영역</div>
+		<div id="footer">푸터영역</div>
+	</div>
+
+</body>
+</html>
