@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <title>레이아웃</title>
+ <style>
+ /*모든 div마다 너비 속성등을 반복해서 작업하면 효율성이 떨어지므로 
+ 가장 바깥쪽에 모든 div를 가둬둘 또 하나의 상자를 두면 편하다*/
+#wrapper{
+width:600px;
+border:2px solid black;
+margin:auto;
+}
+	#box1{
+		background-color:red;
+		height:60px;
+	}
+	#box2{
+		background-color:yellow;
+		height:300px;
+		/*overflow:hidden;넘처난 컨텐츠를 안보이게 가려준다*/
+		overflow:scroll;
+	}	
+	#box3{
+		background-color:blue;
+		height:60px;
+	}
+ </style>
+</head>
+<body>
+<!--
+고전적인 작업에서는 웹페이지의 레이아웃을 테이블로 작업해왔다.
+그러나 table은 그 목적 자체가 데이터를 보여주기 위한 용도이기 때문에 
+오늘날과 같이 웹표준을 중시하는 시기에는 사용하면 안된다.
+해결책) tag중 화면을 원하는 영역으로 나눠주는 div태그를 이용하면 된다.
+-->
+
+<!--
+div를 포함한 모든 태그는 박스로 간주한다.
+따라서 모두 네모로 생겼다. 이러한 특징을 가리켜 box model이라고 한다.
+-->
+<div id="wrapper">
+	<div id="box1">빨간 영역</div>
+	<div id="box2">Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis</div>
+	<div id="box3">파란 영역</div>
+</div>
+</body>
+</html>
