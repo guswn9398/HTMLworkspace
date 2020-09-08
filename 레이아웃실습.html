@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>레이아웃실습</title>
+<style>
+ /*모든 div마다 너비 속성등을 반복해서 작업하면 효율성이 떨어지므로 
+ 가장 바깥쪽에 모든 div를 가둬둘 또 하나의 상자를 두면 편하다*/
+	#wrapper{
+	width:700px;
+	height:600px;
+	border:2px solid black;
+	margin:auto;
+	}
+	#box1{
+		background-color:rgb(200,282,230);
+		height:100px;
+	}
+		#box2{
+		height:400px;
+	}
+	#box2left{
+		background-color:#ff66ff;
+		height:100%;
+		width:200px;
+		float:left;
+	}	
+		#box2right{
+		background-color:#999999;
+		height:100%;
+		width:500px;
+		float:left;
+	}	
+	#box3{
+		background-color:#000000;
+		color:white;
+		height:100px;
+		width:100%;
+		clear:left;
+	}
+</style>
+</head>
+<body>
+<div id="wrapper">
+	<div id="box1">민트색 영역</div>
+	<div id="box2">
+		<div id="box2left">핑크영역</div>
+		<div id="box2right">회색영역</div>
+	</div>
+	<div id="box3">검은 영역</div>
+</div>
+</body>
+</html>

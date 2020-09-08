@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>레이아웃실습보충</title>
+<style>
+ /*가장 바깥쪽 상자로 자식 요소들을 가둬둠*/
+	#wrapper{
+	width:700px;
+	height:600px;
+	margin:auto;	
+	border:2px solid black;
+	}
+	#header{
+	width:100%;/*wrapper의 넓이가 더 늘어나도 상관없이 유연하게 움직인다.*/
+	height:100px;
+	background-color:red;
+	}
+	/*자식 요소를 float 한 경우 부모인 div에는 overflow:hidden속성을 지정해야 문제가 발생하지 않는다.*/
+	#content{
+	width:100%;
+	height:400px;
+	background-color:gray;
+	overflow:hidden;
+	}
+	#section{
+		width:200px;
+		height:100%;
+		background:yellow;
+		float:left;
+	}
+	#area{
+		width:500px;
+		height:100%;
+		background:dodgerblue;
+		float:left;
+	}
+	#footer{
+	width:100%;
+	height:100px;
+	background-color:green;
+	}
+
+</style>
+</head>
+<body>
+
+	<div id="wrapper">
+		<div id="header">Header</div>
+		<div id="content">
+			<div id="section">section</div>
+			<div id="area">area</div>
+		</div>
+		<div id="footer">Footer</div>
+	</div>
+
+</body>
+</html>
