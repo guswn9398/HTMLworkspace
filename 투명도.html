@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>투명도</title>
+
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background: orange;
+            background-size: 200px 200px;
+            margin: auto;
+        }
+
+        #mask {
+            width: 200px;
+            height: 200px;
+            background: black;
+            /* opacity 투명도*/
+        }
+
+        #box:hover #mask {
+            opacity: 0.5;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div id="mask"></div>
+    </div>
+</body>
+
+</html>

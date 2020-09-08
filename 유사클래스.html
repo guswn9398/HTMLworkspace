@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <title>유사클래스</title>
+
+	<style>
+        /*아래와 같이 특정 요소를 가리키는 방법에 있어
+         실질적 이름이나, 아이디, 클래스가 아닌
+        요소의 현재 상태를 이용하여 가리키는 방법을 유사클래스라고 한다.*/
+        
+        #btn:hover{
+            background: pink;
+        }
+        p{
+            display: none;
+            background: yellow
+        }
+        
+        /*div에 마우스를 올려놓으면 p 태그에 하고싶은 거*/
+        div:hover p{
+            display: block;
+        }
+	</style>
+</head>
+
+<body>
+
+    <button id="btn">나 버튼</button>
+        <div> hello
+            <p>여기는 p 영역
+            </p>
+    </div>
+
+</body>
+</html>

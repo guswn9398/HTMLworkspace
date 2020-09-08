@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+
+    <style>
+        /*메뉴들을 묶어놓을 박스에 대한 클래스 정의*/
+        .menu {
+            width: 190px;
+            background: yellow;
+        }
+
+        /*선택자는 조합하여 사용할 수 있다. 선택자 뒤에 한 칸을 띄우면 하위 요소를 의미한다*/
+        .menu a {
+            display: block;
+            /*인라인속성을 블럭으로 전환함으로 인해 너비와 높이가 고정된다.*/
+            text-decoration: none;
+            background-color: #eeeeee;
+            color: #000000;
+            /*a태그를 이루는 박스와 그 안에 있는 글씨가 너무 붙어있어서 띄우기*/
+            padding: 12px;
+        }
+
+        /*유사클래스를 이용하여 링크태그에 마우스 올려놓으면 배경색이 변함*/
+        .menu a:hover {
+            background-color: #cccccc;
+        }
+
+        /*a태그에 전송 된 클래스*/
+        .menu a.active {
+            background-color: #4caf50;
+            color: #ffffff;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="menu">
+        <a href="#" class="active">1일차</a>
+        <a href="./day1/dummy.html" target="myframe">dummy text</a>
+        <a href="./day1/index.html" target="myframe">인덱스</a>
+        <a href="./day1/게시판.html" target="myframe">게시판</a>
+        <a href="./day1/로그인폼 만들기.html" target="myframe">로그인폼 만들기</a>
+        <a href="./day1/셀 합치기.html" target="myframe">셀 합치기</a>
+        <a href="./day1/테이블기초.html" target="myframe">데이블기초</a>
+    </div>
+    <div class="menu">
+        <a href="#" class="active">2일차</a>
+        <a href="./day2/block의 이해.html" target="myframe">block의 이해</a>
+        <a href="./day2/border 학습.html" target="myframe">border 학습</a>
+        <a href="./day2/레이아웃.html" target="myframe">레이아웃</a>
+        <a href="./day2/레이아웃실습보충.html" target="myframe">레이아웃실습보충</a>
+        <a href="./day2/배경처리.html" target="myframe">배경처리</a>
+        <a href="./day2/오늘의 과제.html" target="myframe">오늘의 과제</a>
+        <a href="./day2/위치속성.html" target="myframe">위치속성</a>
+        <a href="./day2/회원가입폼.html" target="myframe">회원가입폼</a>
+    </div>
+    <div class="menu">
+        <a href="#" class="active">3일차</a>
+        <a href="./day3/레이아웃.html" target="myframe">레이아웃</a>
+        <a href="./day3/인라인블럭.html" target="myframe">inline-block</a>
+        <a href="./day3/박스모델.html" target="myframe">box모델</a>
+        <a href="./day3/트랜지션.html" target="myframe">transition</a>
+        <a href="./day3/동영상.html" target="myframe">동영상 제어</a>
+        <a href="./day3/에니메이션.html" target="myframe">에니메이션</a>
+        <a href="./day3/변형.html" target="myframe">변형</a>
+    </div>
+    <div class="menu">
+        <a href="#" class="active">4일차</a>
+        <a href="./day0907/box%20%EC%82%AC%EC%9D%B4%EC%A7%95.html" target="myframe">box sizing</a>
+        <a href="./day0907/%EB%A1%9C%EB%94%A9%EB%B0%94.html" target="myframe">loading bar</a>
+        <a href="./day0907/%EC%9C%A0%EC%82%AC%ED%81%B4%EB%9E%98%EC%8A%A4.html" target="myframe">유사클래스</a>
+        <a href="./day0907/%EC%9C%A0%EC%82%AC%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8.html" target="myframe">유사엘리먼트</a>
+        <a href="./day0907/%EC%9D%B4%EB%AF%B8%EC%A7%80flip.html" target="myframe">이미지 flip</a>
+        <a href="./day0907/%ED%88%AC%EB%AA%85%EB%8F%84.html" target="myframe">투명도</a>
+        <a href="./day0907/%ED%99%94%EC%82%B4%ED%91%9C%ED%91%9C%ED%98%84%ED%95%98%EA%B8%B0.html" target="myframe">화살표 표현하기</a>
+        <a href="./day0907/%EC%8B%A4%EC%8A%B5%EA%B3%BC%EC%A0%9C.html" target="myframe">실습</a>
+    </div>
+</body>
+
+</html>

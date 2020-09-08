@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>유사엘리먼</title>
+
+    <style>
+        p:first-child {
+            color: red;
+            font-weight: bold;
+            
+        }
+        div::first-line{
+            color: deeppink;
+        }
+    </style>
+</head>
+
+<body>
+    <!--유사클래스와 비슷한 개념인 유사엘리먼트를 학습-->
+    <!--유사클래스란 실제 아이디, 이름, 태그명이 아닌
+    요소의 상태로도 가리키는 방법을 제공한다.
+    유사엘리먼트란 문서내의 요소를 가리킬때 
+    그 요소의 순서, 위치등으로 가리키는 방법을 제공한다.
+    유사클래스와 유사엘리먼트는 어떻게 구분하는가?
+    CSS3부터는 유사 엘리먼트에는 ::(더블콜론)을 이용한다.
+    즉, 문서내의 요소를 가리키는 방법을 다양하게 지원하기 위한
+    selector의 확장이다.-->
+    <p>난 첫번째 자식 요소</p>
+    <p>난 두번째 자식 요소</p>
+    <p>난 세번째 자식 요소</p>
+    
+    <div>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? [33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</div>
+</body>
+
+</html>

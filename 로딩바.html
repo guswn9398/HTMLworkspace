@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>로딩바만들기</title>
+    <style>
+        /*로딩바 스타일 정의*/
+        .loader {
+            border: 16px solid #f3f3f3;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border-top: 16px solid aqua;
+            transform: rotate(40deg);
+            animation: spin 1s linear infinite;
+        }
+
+        /*물체를 회전시키는 에니메이션*/
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="loader">
+
+    </div>
+
+</body>
+
+</html>

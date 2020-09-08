@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>실습과제</title>
+
+    <style>
+        #wrapper {
+            width: 430px;
+            height: 220px;
+            background: #ff00eb;
+            margin: auto;
+            padding: 10px;
+            box-sizing: border-box;
+
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: url(https://www.theuiaa.org/wp-content/uploads/2017/12/2018_banner.jpg);
+            background-size: 200px 200px;
+            display: inline-block;
+            border: 5px solid #595fff;
+            box-sizing: border-box;
+
+        }
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            background: black;
+        }
+
+        .box:hover .mask {
+            animation: overlay 1s forwards;
+        }
+
+        @keyframes overlay {
+            from {
+                opacity: 0.5
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="box">
+            <div class="mask"></div>
+        </div>
+        <div class="box" style="transform:scaleX(-1)">
+            <div class="mask"></div>
+        </div>
+    </div>
+</body>
+
+</html>
